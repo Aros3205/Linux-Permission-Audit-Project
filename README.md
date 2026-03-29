@@ -24,7 +24,7 @@ This project demonstrates how improper file permissions in Linux systems can int
 
 ### 📸 Vulnerability (777 Permissions)
 
-![Numeric Vulnerability](screenshots/numeric-vulnerability.png)
+![Numeric Vulnerability](numeric-vulnerability.png)
 
 A file was assigned `777` permissions, making it readable, writable, and executable by all users. This introduces a security risk as any user can modify the file.
 
@@ -32,7 +32,7 @@ A file was assigned `777` permissions, making it readable, writable, and executa
 
 ### 📸 Remediation (600 Permissions)
 
-![Numeric Fix](screenshots/numeric-fix.png)
+![Numeric Fix](numeric-fix.png)
 
 Permissions were restricted using:
 
@@ -42,7 +42,7 @@ chmod 600 file1.txt
 
 This ensures only the file owner has read and write access.
 
-> While permissions such as 744 allow read access to other users, a stricter permission of 600 was applied to enforce the principle of least privilege and prevent unauthorized access.
+> While permissions such as 744 allow read only access to other users, a stricter permission of 600 was applied to enforce the principle of least privilege and prevent unauthorized access.
 
 ---
 
@@ -50,7 +50,7 @@ This ensures only the file owner has read and write access.
 
 ### 📸 Vulnerability (Others Write Access)
 
-![Symbolic Vulnerability](screenshots/symbolic-vulnerability.png)
+![Symbolic Vulnerability](symbolic-vulnerability.png)
 
 Using symbolic notation, write permission was granted to others:
 
@@ -64,7 +64,7 @@ This resulted in a world-writable file, allowing unauthorized modification.
 
 ### 📸 Remediation (Selective Permission Removal)
 
-![Symbolic Fix](screenshots/symbolic-fix.png)
+![Symbolic Fix](symbolic-fix.png)
 
 Permissions were corrected using:
 
@@ -96,4 +96,4 @@ This project highlights the importance of proper file permission management in L
 
 ## 🔗 Author
 
-**Your Name**
+**Tolulope R. Arowobusoye**
